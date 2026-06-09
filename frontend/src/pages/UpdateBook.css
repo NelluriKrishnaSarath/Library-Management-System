@@ -1,0 +1,116 @@
+.update-page{
+
+    min-height:100vh;
+
+    background:#f4f6f9;
+
+    padding:40px;
+}
+
+.update-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:20px;
+}
+
+.header{
+
+    display:flex;
+
+    justify-content:
+    space-between;
+
+    margin-bottom:20px;
+}
+
+.books-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.books-table th{
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:15px;
+}
+
+.books-table td{
+
+    padding:15px;
+
+    border-bottom:
+    1px solid #ddd;
+}
+
+.edit-btn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}
+
+.back-btn{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+}
+
+.update-form{
+
+    margin-top:30px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.update-form input{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+}
+
+.update-form button{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+}

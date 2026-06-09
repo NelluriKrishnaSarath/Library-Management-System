@@ -1,0 +1,35 @@
+.navbar{
+
+    padding:15px 40px;
+
+    box-shadow:
+    0 4px 10px rgba(0,0,0,0.1);
+}
+
+.navbar-brand{
+
+    font-size:28px;
+
+    font-weight:bold;
+}
+
+.nav-link{
+
+    color:white !important;
+
+    margin-right:15px;
+
+    transition:0.3s;
+}
+
+.nav-link:hover{
+
+    color:#ffc107 !important;
+}
+
+.nav-btn{
+
+    border-radius:10px;
+
+    padding:8px 20px;
+}

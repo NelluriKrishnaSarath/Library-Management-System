@@ -1,0 +1,152 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.delete-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    ),
+
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+
+    background-size:cover;
+
+    background-position:center;
+
+    padding:40px;
+}
+
+.delete-container{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+}
+
+.delete-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    color:#1e293b;
+
+    margin-bottom:25px;
+}
+
+.back-btn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    margin-bottom:20px;
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    background:#0b5ed7;
+}
+
+.books-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+.books-table th{
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:15px;
+}
+
+.books-table td{
+
+    padding:15px;
+
+    border-bottom:1px solid #ddd;
+
+    text-align:center;
+}
+
+.books-table tr:hover{
+
+    background:#f8f9fa;
+}
+
+.delete-btn{
+
+    background:#dc3545;
+
+    color:white;
+
+    border:none;
+
+    padding:10px 15px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.delete-btn:hover{
+
+    background:#bb2d3b;
+
+    transform:scale(1.05);
+}
+
+@media(max-width:768px){
+
+    .delete-container{
+
+        padding:15px;
+
+        overflow-x:auto;
+    }
+
+    .delete-title{
+
+        font-size:28px;
+    }
+
+    .books-table{
+
+        min-width:700px;
+    }
+}

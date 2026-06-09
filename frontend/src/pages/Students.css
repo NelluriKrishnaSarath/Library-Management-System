@@ -1,0 +1,48 @@
+.students-page{
+
+    min-height:100vh;
+
+    background:#f4f6f9;
+
+    padding:30px;
+}
+
+.students-container{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+}
+
+.students-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin-top:20px;
+}
+
+.students-table th{
+
+    background:#1e293b;
+
+    color:white;
+
+    padding:15px;
+}
+
+.students-table td{
+
+    padding:15px;
+
+    border-bottom:
+    1px solid #ddd;
+}
+
+.students-table tr:hover{
+
+    background:#f8fafc;
+}

@@ -1,0 +1,49 @@
+.return-page{
+
+    padding:30px;
+}
+
+.return-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:white;
+}
+
+.return-table th{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px;
+}
+
+.return-table td{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+}
+
+.return-btn{
+
+    background:#10B981;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:6px;
+
+    cursor:pointer;
+}
+
+.return-btn:hover{
+
+    background:#059669;
+}

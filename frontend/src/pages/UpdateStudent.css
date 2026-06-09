@@ -1,0 +1,59 @@
+.update-page{
+
+    min-height:100vh;
+
+    background:#f8fafc;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+}
+
+.update-card{
+
+    width:500px;
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.1);
+}
+
+.update-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+}
+
+.update-card input,
+.update-card textarea{
+
+    padding:12px;
+
+    border:1px solid #ddd;
+
+    border-radius:8px;
+}
+
+.update-card button{
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    padding:12px;
+
+    border-radius:8px;
+
+    cursor:pointer;
+}

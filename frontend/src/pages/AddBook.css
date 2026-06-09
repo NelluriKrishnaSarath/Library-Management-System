@@ -1,0 +1,217 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.add-book-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.6),
+    rgba(0,0,0,0.6)
+    ),
+
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px;
+}
+
+.add-book-card{
+
+    width:100%;
+    max-width:700px;
+
+    background:
+    rgba(255,255,255,0.1);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:20px;
+
+    padding:40px;
+
+    color:white;
+
+    box-shadow:
+    0 8px 32px rgba(0,0,0,0.3);
+}
+
+.add-book-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    font-size:35px;
+
+    font-weight:700;
+}
+
+.form-group{
+
+    margin-bottom:20px;
+}
+
+.form-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:15px;
+}
+
+.form-control{
+
+    width:100%;
+
+    padding:14px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:
+    rgba(255,255,255,0.15);
+
+    color:white;
+
+    outline:none;
+}
+
+.form-control::placeholder{
+
+    color:#ddd;
+}
+
+.form-control:focus{
+
+    border:1px solid #ffc107;
+
+    box-shadow:
+    0 0 10px #ffc107;
+}
+
+.save-btn{
+
+    width:100%;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#ffc107;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.save-btn:hover{
+
+    background:#ffca2c;
+
+    transform:translateY(-2px);
+}
+
+.back-btn{
+
+    width:100%;
+
+    margin-top:15px;
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:10px;
+
+    background:#0d6efd;
+
+    color:white;
+
+    cursor:pointer;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+
+    background:#0b5ed7;
+}
+
+@media(max-width:768px){
+
+    .add-book-card{
+
+        padding:25px;
+    }
+
+    .add-book-card h1{
+
+        font-size:28px;
+    }
+}
+.sidebar{
+
+    width:260px;
+
+    background:#1e293b;
+
+    color:white;
+
+    min-height:100vh;
+
+    padding:25px;
+}
+
+.logo{
+
+    text-align:center;
+
+    margin-bottom:30px;
+}
+
+.sidebar-menu{
+
+    list-style:none;
+
+    padding:0;
+}
+
+.sidebar-menu li{
+
+    padding:15px;
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.sidebar-menu li:hover{
+
+    background:#334155;
+
+    padding-left:20px;
+}

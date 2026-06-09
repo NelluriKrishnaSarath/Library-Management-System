@@ -1,0 +1,168 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+.issue-page{
+
+    min-height:100vh;
+
+    background:
+    linear-gradient(
+    rgba(0,0,0,0.7),
+    rgba(0,0,0,0.7)
+    ),
+
+    url("https://images.unsplash.com/photo-1521587760476-6c12a4b040da");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:30px;
+}
+
+.issue-card{
+
+    width:100%;
+
+    max-width:700px;
+
+    background:white;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 10px 30px rgba(0,0,0,0.2);
+}
+
+.issue-card h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+    color:#1e293b;
+
+    font-size:35px;
+}
+
+.issue-card form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.issue-card select{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+.issue-card input{
+
+    padding:15px;
+
+    border:1px solid #ddd;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    outline:none;
+}
+
+.issue-card select:focus,
+.issue-card input:focus{
+
+    border-color:#0d6efd;
+
+    box-shadow:
+    0 0 5px rgba(13,110,253,0.3);
+}
+
+.issue-btn{
+
+    background:#198754;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.issue-btn:hover{
+
+    background:#157347;
+
+    transform:
+    translateY(-2px);
+}
+
+.back-btn{
+
+    background:#0d6efd;
+
+    color:white;
+
+    border:none;
+
+    padding:15px;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:0.3s;
+}
+
+.back-btn:hover{
+
+    background:#0b5ed7;
+}
+
+@media(max-width:768px){
+
+    .issue-card{
+
+        padding:25px;
+    }
+
+    .issue-card h1{
+
+        font-size:28px;
+    }
+}

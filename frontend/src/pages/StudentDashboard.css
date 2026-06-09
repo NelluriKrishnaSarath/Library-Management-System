@@ -1,0 +1,315 @@
+body{
+
+    margin:0;
+
+    padding:0;
+
+    font-family:Arial, sans-serif;
+
+    background:#f5f7fa;
+}
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.student-dashboard{
+    display:flex;
+    min-height:100vh;
+    background:#F8FAFC;
+    font-family:'Segoe UI',sans-serif;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+.sidebar{
+    width:250px;
+    background:#0F172A;
+    color:white;
+    padding:30px 20px;
+    position:fixed;
+    height:100vh;
+    left:0;
+    top:0;
+}
+
+.sidebar h2{
+    font-size:32px;
+    margin-bottom:40px;
+    text-align:center;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    margin-bottom:15px;
+}
+
+.sidebar a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    padding:12px 15px;
+    border-radius:10px;
+    transition:0.3s;
+    font-size:16px;
+}
+
+.sidebar a:hover{
+    background:#2563EB;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+.dashboard-content{
+    flex:1;
+    margin-left:250px;
+    padding:30px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.dashboard-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:30px;
+}
+
+.dashboard-header h1{
+    font-size:52px;
+    color:#0F172A;
+    margin-bottom:5px;
+}
+
+.dashboard-header p{
+    color:#64748B;
+    font-size:18px;
+}
+
+.student-profile{
+    display:flex;
+    align-items:center;
+    gap:12px;
+    background:white;
+    padding:10px 18px;
+    border-radius:12px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.student-avatar{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background:#2563EB;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.student-profile h4{
+    margin:0;
+    color:#0F172A;
+}
+
+.student-profile span{
+    color:#64748B;
+    font-size:13px;
+}
+
+/* =========================
+   DASHBOARD CARDS
+========================= */
+
+.dashboard-cards{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+    margin-bottom:40px;
+}
+
+.dashboard-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.dashboard-card:hover{
+    transform:translateY(-5px);
+}
+
+.dashboard-card h2{
+    color:#2563EB;
+    font-size:48px;
+    margin-bottom:10px;
+}
+
+.dashboard-card p{
+    color:#64748B;
+    font-size:18px;
+}
+
+/* =========================
+   BOOK SECTION
+========================= */
+
+.recommended-section h2{
+    font-size:36px;
+    margin-bottom:25px;
+    color:#0F172A;
+}
+
+.books-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(260px,1fr));
+    gap:25px;
+}
+
+.book-card{
+    background:white;
+    border-radius:18px;
+    overflow:hidden;
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.book-card:hover{
+    transform:translateY(-5px);
+}
+
+.book-card img{
+    width:100%;
+    height:240px;
+    object-fit:cover;
+}
+
+.book-content{
+    padding:20px;
+}
+
+.book-content h5{
+    font-size:22px;
+    margin-bottom:10px;
+    color:#0F172A;
+}
+
+.book-content p{
+    color:#64748B;
+    margin-bottom:20px;
+}
+
+.borrow-btn{
+    width:100%;
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.borrow-btn:hover{
+    background:#1D4ED8;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    .dashboard-header{
+        flex-direction:column;
+        align-items:flex-start;
+        gap:15px;
+    }
+
+    .dashboard-header h1{
+        font-size:38px;
+    }
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+        width:100%;
+        height:auto;
+        position:relative;
+    }
+
+    .dashboard-content{
+        margin-left:0;
+        padding:20px;
+    }
+
+    .dashboard-cards{
+        grid-template-columns:1fr;
+    }
+
+    .books-grid{
+        grid-template-columns:1fr;
+    }
+
+    .dashboard-header h1{
+        font-size:30px;
+    }
+}
+.borrowed-books-section{
+
+    margin-top:30px;
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:15px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
+}
+
+.borrowed-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+}
+
+.borrowed-table th{
+
+    background:#2563EB;
+
+    color:white;
+
+    padding:12px;
+}
+
+.borrowed-table td{
+
+    padding:12px;
+
+    border-bottom:1px solid #ddd;
+}
+
+.borrowed-table tr:hover{
+
+    background:#f8fafc;
+}

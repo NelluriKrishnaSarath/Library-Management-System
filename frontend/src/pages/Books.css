@@ -1,0 +1,64 @@
+body{
+
+    background:#f5f7fa;
+}
+
+/* TITLE */
+
+.books-title{
+
+    font-size:45px;
+
+    font-weight:bold;
+
+    margin-bottom:40px;
+
+    color:#141e30;
+}
+
+/* BOOK CARD */
+
+.book-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+    0 5px 15px rgba(0,0,0,0.1);
+
+    transition:0.3s;
+}
+
+.book-card:hover{
+
+    transform:translateY(-10px);
+}
+
+.book-card img{
+
+    width:100%;
+
+    height:350px;
+
+    object-fit:cover;
+}
+
+.book-content{
+
+    padding:20px;
+}
+
+.book-content h5{
+
+    font-size:22px;
+
+    font-weight:bold;
+}
+
+.book-content p{
+
+    color:gray;
+}
